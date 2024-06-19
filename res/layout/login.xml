@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".Login" >
+
+    <EditText
+        android:id="@+id/editText_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_id"
+        android:layout_below="@+id/editText_id"
+        android:singleLine="true"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:maxLength="16"
+        android:password="true"
+        android:imeOptions="actionDone"
+        android:width="160dp" />
+
+    <EditText
+        android:id="@+id/editText_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="44dp"
+        android:ems="10"
+        android:hint="아이디"
+        android:maxLength="16"
+        android:singleLine="true"
+        android:width="160dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="96dp"
+        android:layout_alignTop="@+id/editText_id"
+        android:layout_toRightOf="@+id/editText_pw"
+        android:text="로그인"
+        android:width="75dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_pw"
+        android:layout_below="@+id/editText_pw"
+        android:layout_marginTop="22dp"
+        android:text="인가된 유저만이 접속 가능합니다."
+        android:textColor="#FFFFFFFF"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:text="유저등록은 apps.health.kr 을 참고 하세요."
+        android:textColor="#FFFFFFFF"
+        android:textSize="11dp" />
+
+</RelativeLayout>
